@@ -1,6 +1,6 @@
 /* Uncomment this block for a web app with full screen height and width. */
 
-/* body, html {
+body, html {
   height: 100%;
 }
 
@@ -9,5 +9,33 @@ body {
 }
 
 #root {
+  background-color: Orange;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-} */
+  touch-action: none;
+}
+
+.upper {
+  background-color: LightGreen;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  outline: solid 2px transparent;
+  outline-offset: -2px;
+  touch-action: none;
+}
+
+.upper:focus {
+  outline-color: Black;
+}
+
+.item {
+  margin: 0;
+}
+
+.input-box {
+  height: 40px;
+  touch-action: none;
+}
