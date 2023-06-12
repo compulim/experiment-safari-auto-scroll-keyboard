@@ -18,13 +18,12 @@ body {
 
 .webchat {
   display: flex;
-  /* flex: 1; */
+  flex: 1;
   flex-direction: column;
 
   background-color: white;
   height: 100%;
   width: 100%;
-  /* z-index: unset; */
 }
 
 .webchat__transcript {
