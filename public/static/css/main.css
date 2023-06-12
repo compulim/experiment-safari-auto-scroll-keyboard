@@ -70,14 +70,14 @@ body {
 }
 
 .webchat__send-box-text-box__input:not(:disabled):not([aria-disabled='true']) {
-  color: black;
+  color: white;
 }
 
 .webchat__send-box-text-box__input:disabled,
 .webchat__send-box-text-box__input[aria-disabled='true'] {
-  color: #767676;
+  color: #EEE;
 }
 
 .webchat__send-box-text-box__input::placeholder {
-  color: #767676;
+  color: #EEE;
 }
