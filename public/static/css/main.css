@@ -1,6 +1,8 @@
 /* Uncomment this block for a web app with full screen height and width. */
 
-body, html {
+body,
+html {
+  background-color: bisque;
   height: 100%;
 }
 
@@ -38,4 +40,77 @@ body {
 .input-box {
   height: 40px;
   touch-action: none;
+}
+
+#webchat {
+  background-color: aquamarine;
+  height: 100%;
+  width: 100%;
+}
+
+.webchat {
+  display: flex;
+  /* flex: 1; */
+  flex-direction: column;
+
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  /* z-index: unset; */
+}
+
+.webchat__transcript {
+  flex: 1 1 0%;
+}
+
+.webchat__send-box {
+  flex-shrink: 0;
+}
+
+.webchat__send-box__main {
+  display: flex;
+  align-items: stretch;
+  background-color: Orange;
+  border-top: solid 1px #e6e6e6;
+  min-height: 40px;
+}
+
+.webchat__send-box__text-box {
+  flex: 10000 1 0%;
+}
+
+.webchat__send-box-text-box {
+  display: flex;
+
+  align-items: center;
+  font-family: 'Calibri', 'Helvetica Neue', 'Arial', 'sans-serif';
+  padding: 10px;
+  position: relative;
+}
+
+.webchat__send-box-text-box__input {
+  flex: 1 1 0%;
+
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  height: 100%;
+  outline: 0;
+  padding: 0;
+
+  /* background-color: transparent; */
+  background-color: red;
+}
+
+.webchat__send-box-text-box__input:not(:disabled):not([aria-disabled='true']) {
+  color: black;
+}
+
+.webchat__send-box-text-box__input:disabled,
+.webchat__send-box-text-box__input[aria-disabled='true'] {
+  color: #767676;
+}
+
+.webchat__send-box-text-box__input::placeholder {
+  color: #767676;
 }

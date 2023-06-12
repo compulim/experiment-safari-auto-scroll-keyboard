@@ -10,7 +10,7 @@
     "build:esbuild": "esbuild --bundle --jsx=automatic --minify --outfile=./public/static/js/main.js src/index.tsx",
     "build:typescript": "tsc -p ./src/tsconfig.json",
     "start": "concurrently --kill-others \"npm run start:*\"",
-    "start:esbuild": "npm run build:esbuild -- --servedir=./public",
+    "start:esbuild": "npm run build:esbuild -- --serve=8001 --servedir=./public",
     "start:typescript": "npm run build:typescript -- --watch"
   },
   "dependencies": {
