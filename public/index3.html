@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>React web app</title>
+    <style type="text/css">
+      body,
+      html {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .layout {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+      }
+
+      .transcript {
+        background-color: #dfd;
+        flex: 1;
+      }
+
+      .transcript:focus {
+        background-color: #9f9;
+      }
+
+      .text-box::placeholder {
+        color: Red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="transcript" tabindex="0">Tap here.</div>
+      <input
+        class="text-box"
+        placeholder="Then tap here"
+        type="text"
+      />
+    </div>
+  </body>
+</html>
