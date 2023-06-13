@@ -11,6 +11,8 @@ It seems Safari "scroll form control into view" could be interrupted when a styl
 5. ACTUAL: The text box did not scroll into view and is hidden from viewport until scrolled manually
 6. If it does not repro, repeat step 2-3 for up to 20 times
 
+Also, when the text box is focused, `<body>` become much taller and scrollable to the empty bottom part. This is not expected.
+
 ## Description
 
 The demos below are free of JavaScript with minimal use of CSS flex box. The only difference is how CSS is being applied to `input::placeholder`.
