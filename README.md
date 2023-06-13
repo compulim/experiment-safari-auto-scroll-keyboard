@@ -37,6 +37,8 @@ The demos below are free of JavaScript with minimal use of CSS flex box. The onl
 
 ## Videos
 
+Tested on iOS 16.5 and iPadOS 16.5.
+
 ### Demo of repro, coloring placeholder red
 
 https://github.com/compulim/experiment-safari-auto-scroll-keyboard/assets/1622400/24f9015d-bc9f-4353-87f8-756a86ab604c
