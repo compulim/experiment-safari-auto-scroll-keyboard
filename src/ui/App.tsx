@@ -1,8 +1,8 @@
 const App = () => {
   return (
     <div className="webchat" role="complementary">
-      <div className="webchat__transcript">
-        <p>Tap here.</p>
+      <div className="webchat__transcript" tabIndex={0}>
+        Tap here.
       </div>
       <div aria-errormessage={undefined} aria-invalid={false} className="webchat__send-box" dir="ltr" role="form">
         <div className="webchat__send-box__main">
