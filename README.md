@@ -34,3 +34,17 @@ The demos below are free of JavaScript with minimal use of CSS flex box. The onl
   .text-box::placeholder {
   }
   ```
+
+## Videos
+
+### Demo of repro, coloring placeholder red
+
+https://github.com/compulim/experiment-safari-auto-scroll-keyboard/assets/1622400/24f9015d-bc9f-4353-87f8-756a86ab604c
+
+### Demo of no-repro, style is commented out
+
+https://github.com/compulim/experiment-safari-auto-scroll-keyboard/assets/1622400/8a6da055-e3df-4b76-9c17-cdd804bd2820
+
+### Demo of repro, style is empty
+
+https://github.com/compulim/experiment-safari-auto-scroll-keyboard/assets/1622400/678611f7-81bf-4afa-bf2b-dddf9c2007e8
