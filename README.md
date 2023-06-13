@@ -8,7 +8,7 @@ It seems Safari "scroll form control into view" could be interrupted when a styl
 2. Tap on the top part (green)
 3. Tap on the text box
 4. EXPECT: The text box should scroll into view
-5. ACTUAL: The text box is not scroll into view and is hidden
+5. ACTUAL: The text box did not scroll into view and is hidden from viewport until scrolled manually
 6. If it does not repro, repeat step 2-3 for up to 20 times
 
 ## Description
