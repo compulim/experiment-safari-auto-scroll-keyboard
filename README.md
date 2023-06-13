@@ -1,19 +1,23 @@
-## Your repository is almost ready
+# experiment-safari-auto-scroll-keyboard
 
-There are few more steps to enable GitHub Pages and continuous deployment.
+It seems Safari "scroll form control into view" could be interrupted when a style is being applied to the pseudo element of the form control. It do not happen all the time and looks like a race condition.
 
-1. Enable GitHub Pages
-   1. Navigate to [Pages settings](../../settings/pages)
-   1. In the "Source" field, select "GitHub Actions"
-1. Trigger the deployment
-   1. [Modify and commit `App.tsx` to main](../../edit/main/src/ui/App.tsx)
-   1. Check deployment workflow at [![Deploy static content to Pages](../../actions/workflows/static.yml/badge.svg)](../../actions/workflows/static.yml)
+The demos below are free of JavaScript with minimal use of CSS flex box. The only difference is how CSS is being applied to `input::placeholder`.
 
-### GitHub Codespaces
-
-You can set up prebuild to speed up Codespaces creation. The prebuilt image will pre-install all dependencies under `/node_modules/` with initial build.
-
-1. [Set up Codespaces prebuilds](../../settings/codespaces/prebuild_configurations/new)
-   1. Check prebuild workflow at [![Codespaces Prebuilds](../../actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg)](../../actions/workflows/codespaces/create_codespaces_prebuilds)
-
-Once the prebuild action is completed, you can create a new prebuilt codespace.
+- Demo of repro, coloring placeholder red
+  ```css
+  .text-box::placeholder {
+    color: Red;
+  }
+  ```
+- Demo of no-repro, style is commented out
+  ```css
+  /* .text-box::placeholder {
+    color: Red;
+  } */
+  ```
+- Demo of repro, style is empty
+  ```css
+  .text-box::placeholder {
+  }
+  ```
