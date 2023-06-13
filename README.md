@@ -1,6 +1,6 @@
 # experiment-safari-auto-scroll-keyboard
 
-It seems Safari "scroll form control into view" could be interrupted when a style is being applied to the pseudo element of the form control. It do not happen all the time and looks like a race condition.
+It seems iOS/iPadOS Safari "scroll form control into view" could be interrupted when a style is being applied to the pseudo element of the form control. It do not happen all the time and looks like a race condition.
 
 ## Repro steps
 
@@ -11,7 +11,7 @@ It seems Safari "scroll form control into view" could be interrupted when a styl
 5. ACTUAL: The text box did not scroll into view and is hidden from viewport until scrolled manually
 6. If it does not repro, repeat step 2-3 for up to 20 times
 
-Also, when the text box is focused, `<body>` become much taller and scrollable to the empty bottom part. This is not expected.
+(Only on iOS) Also, when the text box is focused, `<body>` become much taller and scrollable to the empty bottom part. This is not expected.
 
 ## Description
 
