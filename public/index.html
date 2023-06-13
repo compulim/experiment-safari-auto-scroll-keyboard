@@ -7,38 +7,8 @@
   <body>
     <h1>experiment-safari-auto-scroll-keyboard</h1>
     <p>
-      It seems Safari "scroll form control into view" could be interrupted when a style is being applied to the pseudo
-      element of the form control. It do not happen all the time and looks like a race condition.
+      Please visit [this page](https://github.com/compulim/experiment-safari-auto-scroll-keyboard) for instructions.
     </p>
-    <p>
-      The demos below are free of JavaScript with minimal use of CSS flex box. The only difference is how CSS is being
-      applied to <code>input::placeholder</code>.
-    </p>
-    <ul>
-      <li>
-        <a href="index3.html">Demo of repro, coloring placeholder red</a>
-        <pre>
-.text-box::placeholder {
-  color: Red;
-}</pre
-        >
-      </li>
-      <li>
-        <a href="index4.html">Demo of no-repro, style is commented out</a>
-        <pre>
-/* .text-box::placeholder {
-  color: Red;
-} */</pre
-        >
-      </li>
-      <li>
-        <a href="index5.html">Demo of repro, style is empty</a>
-        <pre>
-.text-box::placeholder {
-}</pre
-        >
-      </li>
-    </ul>
     <!-- <div id="webchat" role="main"></div>
     <script src="static/js/main.js"></script> -->
   </body>
